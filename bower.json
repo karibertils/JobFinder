@@ -1,0 +1,24 @@
+{
+  "name": "JobFinder",
+  "version": "0.0.0",
+  "authors": [
+    "Kári Bertilsson <karibertils@gmail.com>"
+  ],
+  "description": "Job finding app",
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "angular": "~1.2.25"
+  }
+}
