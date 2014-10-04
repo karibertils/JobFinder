@@ -16,16 +16,17 @@ var db = {
 		dataSavedJob = job;
 	}
 };
-var jobService = require("../jobs-service.js")(db, app);
+var jobService = require("../../jobs-service.js")(db, app);
 
 describe("get jobs", function() {
+
 	it("get should give me a json list of jobs", function(done) {
 		request(app).get('/api/jobs')
-			.expect('Content-Type', /json/)
-			.end(function(err, res) {
-				expect(res.body).to.be.a('Array');
-				done();
-			});
+		.expect('Content-Type', /json/)
+		.end(function(err, res) {
+			expect(res.body).to.be.a('Array');
+			done();
+		});
 	});
 });
 

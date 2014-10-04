@@ -5,7 +5,7 @@ module.exports = function(db, app) {
 	app.use(bodyParser.json());
 
 	app.get('/api/jobs', function(req, res) {
-		jobsData.findJobs().then(function(collection) {
+		db.findJobs().then(function(collection) {
 			res.send(collection);
 		})
 	})
